@@ -19,8 +19,8 @@
 - name: Include deploy tasks
   import_tasks: deploy.yml
 
-  - name: Restart Node.js app to apply changes
+- name: Restart Node.js app to apply changes
   service:
-    name: myapp        # <--- ASEGÚRATE DE QUE ESTE ES EL NOMBRE DE TU SERVICIO
+    name: myapp # <--- ASEGÚRATE DE QUE ESTE ES EL NOMBRE DE TU SERVICIO
     state: restarted
     become: yes
